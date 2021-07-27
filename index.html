@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>66666666</title>
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .text {
+      font-size: 200px;
+      font-family: cursive;
+    }
+
+
+
+    svg {
+      z-index: 2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .use-text {
+      fill: none;
+      stroke: white;
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+      stroke-width: 2px;
+    }
+
+
+    .use-text:nth-child(1) {
+      stroke: #51B4AC;
+      animation: animation1 6s normal infinite ease-in-out;
+    }
+
+    .use-text:nth-child(2) {
+      stroke: #FD90BA;
+      animation: animation2 6s normal infinite ease-in-out;
+    }
+
+    .use-text:nth-child(3) {
+      stroke: #8FDBFF;
+      animation: animation3 6s normal infinite ease-in-out;
+    }
+
+    .use-text:nth-child(4) {
+      stroke: #E1FF8F;
+      animation: animation4 6s normal infinite ease-in-out;
+    }
+
+    .use-text:nth-child(5) {
+      stroke: #C2B9DF;
+      animation: animation5 6s normal infinite ease-in-out;
+    }
+
+    @keyframes animation1 {
+      50% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 7%;
+      }
+
+      70% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 7%;
+      }
+    }
+
+    @keyframes animation2 {
+
+
+      50% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 14%;
+      }
+
+      70% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 14%;
+      }
+    }
+
+    @keyframes animation3 {
+
+      50% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 21%;
+      }
+
+      70% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 21%;
+      }
+    }
+
+    @keyframes animation4 {
+
+      50% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 28%;
+      }
+
+      70% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 28%;
+      }
+    }
+
+    @keyframes animation5 {
+
+
+      50% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 35%;
+      }
+
+      70% {
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 35%;
+      }
+    }
+
+    .filter {
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, .3);
+    }
+
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://img2.baidu.com/it/u=348885538,800843752&fm=26&fmt=auto&gp=0.jpg");
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="text">
+      <text x="10%" y="35%" class="text">屠</text>
+      <text x="40%" y="35%" class="text">文</text>
+      <text x="70%" y="35%" class="text">荟</text>
+    </symbol>
+
+    <g>
+      <use xlink:href="#text" class="use-text"></use>
+      <use xlink:href="#text" class="use-text"></use>
+      <use xlink:href="#text" class="use-text"></use>
+      <use xlink:href="#text" class="use-text"></use>
+      <use xlink:href="#text" class="use-text"></use>
+    </g>
+
+  </svg>
+  <div class="filter"></div>
+</body>
+
+</html>
